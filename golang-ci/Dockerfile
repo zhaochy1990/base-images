@@ -16,8 +16,6 @@ RUN set -ex; mkdir -p /tmp/download \
     && mv /tmp/download/docker/docker /usr/local/bin/ \
     && rm -rf /tmp/download
 
-COPY ./.npmrc /root/.npmrc
-
 RUN node -v
 RUN npm -v
 RUN docker -v
